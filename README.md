@@ -4,6 +4,24 @@ Bootstrap Intel is a simple and elegant theme built on top of Bootstrap. You can
 
 Heads up: this gem already includes Bootstrap 3.2 (css, js and fonts).
 
+## Instalation
+On your Gemfile:
+```
+gem 'bootstrap-intel-theme'
+```
+
+Require the CSS. On your application.css, add:
+```
+*= require bootstrap_intel_theme
+```
+
+Then, require the JS. On your application.js, add:
+```
+//= require bootstrap_intel_theme
+```
+
+If you need the Bootstrap Glyphicons font, just add the fonts/ directory to your Rails config.
+
 ## Basic Structure
 A typical usage is as follows:
 
