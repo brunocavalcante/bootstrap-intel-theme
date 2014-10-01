@@ -1,0 +1,451 @@
+$menu_width: 200px;
+
+#layout {
+  padding-left: $menu_width;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu {
+  left: $menu_width;
+  margin-left: -$menu_width;
+  width: $menu_width;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #333;
+  color: #FFF;
+
+  .nav {
+    .active a {
+      box-shadow: inset 5px 0 white;
+    }
+
+    a {
+      color: white;
+      padding: 15px 20px;
+    }
+
+    a:hover, .active a {
+      background: #222;
+    }
+
+    li {
+      margin: 0;
+    }
+
+    li.nav-header {
+      padding: 10px 14px;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #999;
+    }
+  }
+}
+
+#logged-user {
+  margin: 20px 0 15px;
+  font-size: 13px;
+  padding: 0 15px;
+
+  img {
+    width: 53px;
+  }
+
+  .description {
+    padding-left: 0;
+  }
+
+  strong {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    display: block;
+
+    a {
+      color: #DDD;
+    }
+  }
+}
+
+.header, .content {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.header {
+  margin: 0;
+  text-align: center;
+  padding: 2.5em 2em 0;
+  border-bottom: 1px solid #eee;
+
+  h1 {
+    margin: 0.2em 0 1em;
+    font-size: 3em;
+    font-weight: 300;
+
+    small {
+      font-size: 18px;
+      font-weight: 300;
+      display: block;
+    }
+  }
+}
+
+.content {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.btn {
+  box-shadow: inset 0 -3px rgba(0, 0, 0, 0.2);
+  border: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px 16px 11px;
+}
+
+.btn.btn-default {
+  background: #DDD;
+}
+
+#logo {
+  width: 100px;
+  /*height: 100px;*/
+  margin-top: 20px;
+}
+
+#site-name {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.grand-total {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Progress */
+.big-progress-bar {
+  position: relative;
+  padding-bottom: 26px;
+
+  .progress {
+    margin-bottom: 0;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .progress-bar {
+    text-align: left;
+  }
+
+  .progress span {
+    position: absolute;
+    margin-left: 25px;
+    line-height: 50px;
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .goal, .info {
+    position: absolute;
+    bottom: 0px;
+    font-size: 15px;
+    color: #777;
+    line-height: 24px;
+  }
+
+  .goal {
+    right: 5px;
+  }
+
+  .info {
+    left: 5px;
+  }
+
+  .progress-bar.ghost {
+    border-right: 2px solid #333;
+    z-index: 10;
+    position: absolute;
+    background: transparent;
+    height: 50px;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+
+h3.subtitle {
+  font-weight: 300;
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
+.page-menu {
+  border: 0;
+  margin-bottom: 0;
+
+  .nav {
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 1px solid #EEE;
+
+    li:first-child a {
+      border-left: 0;
+    }
+
+    a {
+      border-left: 1px solid #EEE;
+      color: #333;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.table.table-with-actions tbody td {
+  vertical-align: middle;
+  font-size: 15px;
+}
+td.picture-column {
+  width: 60px;
+}
+td.two-lines-column {
+  strong {
+    display: block;
+  }
+}
+table.beheaded-table tr:first-child td {
+  border-top: 0;
+}
+
+/* Utils */
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+
+.chart-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Alerts */
+.alert {
+  padding: 20px;
+  margin: 0 0 20px;
+  border: 1px solid #eee;
+  border-left-color: #f0ad4e;
+  border-left-width: 5px;
+  border-radius: 3px;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #f0ad4e;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  &.main-alert {
+    border-radius: 0;
+    margin: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+  }
+
+  &.alert-success {
+    border-left-color: green;
+  }
+}
+
+.label.big-label {
+  font-size: 15px;
+}
+
+.table caption {
+  text-transform: uppercase;
+  padding-bottom: 0.3em;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.avatar-thumb {
+  width: 60px;
+}
+
+.media .avatar-big {
+  margin-right: 20px;
+  width: 120px;
+}
+.media h3.subtitle {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+.media.big-user-section h4 {
+  margin-bottom: 5px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+.small-section {
+  margin-bottom: 15px;
+}
+
+.no-margin-bottom, h3.subtitle.no-margin-bottom {
+  margin-bottom: 0;
+}
+.no-margin-top, h3.subtitle.no-margin-top {
+  margin-top: 0;
+}
+
+/* Comments */
+.comments > li {
+  position: relative;
+
+  .avatar {
+    margin-right: 20px;
+  }
+
+  .media-body {
+    background: lighten(#d9dcee, 5%);
+    padding: 15px 20px;
+
+    > h4 {
+      margin-top: 0;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.arrow {
+  border-width: 10px;
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.arrow-left {
+  top: 22px;
+  border-right-color: lighten(#d9dcee, 5%);
+  border-left-width: 0;
+  left: 70px;
+}
+.arrow:after {
+  border-width: 11px;
+  content: "";
+}
+
+dl.dl-horizontal {
+  dt, dd {
+    margin-bottom: 4px;
+  }
+}
+
+.empty-resultset-alert {
+  padding: 15px 20px;
+  background: lighten(#d9dcee, 5%);
+  font-style: italic;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 0;
+}
+
+.status {
+  border-radius: 50%;
+  background: #999;
+  color: white;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+
+  i {
+    top: 2px;
+  }
+}
+
+.status-warning {
+  background: #f0ad4e;
+}
+.status-success {
+  background: #5cb85c;
+}
+.status-danger {
+  background: #d9534f;
+}
+
+.span-danger {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.table td.two-lines-column {
+  vertical-align: middle;
+}
+
+.table td.two-lines-number {
+  vertical-align: middle;
+  p {
+    margin-bottom: 5px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-group.date {
+  label {
+    display: block;
+  }
+  select.form-control {
+    display: inline-block;
+    width: 32%;
+    box-sizing: border-box;
+  }
+}
+
+body .well {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+
+  h3.subtitle {
+    margin-top: 0;
+    border-color: #DDD;
+  }
+}
