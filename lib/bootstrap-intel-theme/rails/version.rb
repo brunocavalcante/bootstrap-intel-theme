@@ -1,7 +1,5 @@
-module Twitter
-  module Bootstrap
-    module Rails
-      VERSION = "0.1.0"
-    end
+module BootstrapIntelTheme
+  module Rails
+    VERSION = "0.1.0"
   end
 end
