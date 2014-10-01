@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'bootstrap-intel-theme'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2014-10-01'
   s.summary     = "Bootstrap 3.2 Theme for Rails 4"
   s.description = "Bootstrap 3.2 Elegant and Simple Theme for Rails 4 Asset Pipeline"
